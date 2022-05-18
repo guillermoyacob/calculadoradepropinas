@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Aplicación que divide las propinas entre los empleados de manera proporcional según sus horas trabajadas. Utiliza esta aplicación para generar, a partir de una suma total de propinas, la parte que le corresponde a cada empleado. Para ello simplemente debes introducir el monto total de la propina, introducir el nombre, las horas y los minutos trabajados de cada empleado y darle al botón de calcular para obtener el monto que le corresponde a cada uno. Puedes agregar y quitar empleados y volver a calcular el monto en cualquier momento.">
+  <meta name="author" content="Guillermo Yacob">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/favicon/favicon.webp" type="image/x-icon">
+  <title>Calculadora de propinas</title>
+</head>
+
+<body>
+
+  <div class="contenedor">
+
+    <h1 class="titulo">Calculadora de propinas</h1>
+
+    <section class="seccion">
+      <form action="#">
+        <label for="totalPropinas">Total de propina:</label>
+        <input type="number" id="totalPropinas">
+      </form>
+    </section>
+
+    <section class="seccion">
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Empleado:</label>
+          <input type="text" id="nombre">
+        </div>
+        <div>
+          <label for="horas">Horas:</label>
+          <select id="horas"></select>
+          <label for="minutos">Minutos:</label>
+          <select id="minutos"></select>
+        </div>
+        <div class="contenedorBoton">
+          <button type="button" id="anadir" class="boton">
+            Añadir
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="seccion">
+      <form action="#" method="post">
+        <ul id="listaEmpleados" class="listaEmpleados">
+          <div class="grid">
+            <li>Empleado</li>
+            <li>Hr</li>
+            <li>Min</li>
+            <li>Total</li>
+          </div>
+        </ul>
+      </form>
+    </section>
+
+    <section class="seccion">
+      <form action="#" class="contenedorBoton">
+        <button id="calcular" class="boton">
+          Calcular
+        </button>
+        <button id="refrescar" class="boton">
+          Refrescar
+        </button>
+      </form>
+    </section>
+
+    <section class="seccion">
+      <p class="parrafo"><strong>Aplicación que divide las propinas entre los empleados de manera proporcional según sus
+          horas trabajadas.</strong> Utiliza esta aplicación para generar, a partir de una suma total de propinas, la
+        parte que le corresponde a cada empleado. Para ello simplemente debes introducir el monto total de la propina,
+        introducir el nombre, las horas y los minutos trabajados de cada empleado y darle al botón de calcular para
+        obtener el monto que le corresponde a cada uno. Puedes agregar y quitar empleados y volver a calcular el monto
+        en cualquier momento.</p>
+    </section>
+
+  </div>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

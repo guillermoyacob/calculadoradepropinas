@@ -1,0 +1,114 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: darkcyan;
+  font-weight: bold;
+}
+
+.contenedor {
+
+  max-width: 500px;
+  display: grid;
+  gap: 1em;
+  margin: 20px;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.titulo,
+form label,
+form input,
+.boton,
+.parrafo {
+  margin: 1em;
+}
+
+.boton {
+  padding: 0.5em;
+}
+
+.parrafo {
+  text-align: justify;
+}
+
+.contenedorBoton {
+  display: flex;
+  justify-content: center;
+}
+
+
+div li {
+  margin-bottom: 0.75em;
+}
+
+.listaEmpleados {
+  padding: 0%;
+  margin-left: 1em
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 40px 40px 80px auto;
+  margin-left: 0%;
+  list-style: none;
+}
+
+.cuerpo {
+  margin: 1em;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.itemEliminar {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: darkorange;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.boton:hover,
+.itemEliminar:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+
+  .contenedor {
+    padding: 0%;
+    margin: 0%;
+    border-radius: 0%;
+  }
+
+  .listaEmpleados {
+    padding: 0%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 120px 40px 40px 80px auto;
+    margin-left: 0%;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 120px 40px 40px 80px auto;
+    margin-left: 0%;
+    list-style: none;
+  }
+}
