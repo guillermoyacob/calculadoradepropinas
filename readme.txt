@@ -1,0 +1,3 @@
+CALCULADORA DE PROPINAS:
+
+Aplicación que divide las propinas entre los empleados de manera proporcional según sus horas trabajadas. Utiliza esta aplicación para generar, a partir de una suma total de propinas, la parte que le corresponde a cada empleado. Para ello simplemente debes introducir el monto total de la propina, introducir el nombre, las horas y los minutos trabajados de cada empleado y darle al botón de calcular para obtener el monto que le corresponde a cada uno. Puedes agregar y quitar empleados y volver a calcular el monto en cualquier momento.
